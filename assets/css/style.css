@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'BrandonGrotesque-Black';
+    src: url('../fonts/Brandon Grotesque/BrandonGrotesque-Black.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+}
+
+@font-face {
+    font-family: 'BrandonGrotesque-Light';
+    src: url('../fonts/Brandon Grotesque/BrandonGrotesque-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+}
+
+@font-face {
+    font-family: 'BrandonGrotesque-Medium';
+    src: url('../fonts/Brandon Grotesque/BrandonGrotesque-Medium.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+}
+
+@font-face {
+    font-family: 'BrandonGrotesque-Regular';
+    src: url('../fonts/Brandon Grotesque/BrandonGrotesque-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+}
+@font-face {
+    font-family: 'BrandonGrotesque-RegularItalic';
+    src: url('../fonts/Brandon Grotesque/BrandonGrotesque-RegularItalic.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+}
+
+@font-face {
+    font-family: 'BrandonGrotesque-Bold';
+    src: url('../fonts/Brandon Grotesque/BrandonGrotesque-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+}
+
+@font-face {
+    font-family: 'BrandonGrotesque-Thin';
+    src: url('../fonts/Brandon Grotesque/BrandonGrotesque-Thin.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+}
+html{
+	height: 100%;
+	position: relative;
+}
+body{
+	font-family: 'BrandonGrotesque-Regular';
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/background.jpg);
+}
+p{
+	margin:0;
+}
+.row{
+	margin:0;
+	padding: 10px 10px;
+	margin-bottom: 10px;
+}
+.footer {
+	width:100%;
+	position:absolute;
+	bottom:0;
+	background: #ccc;
+}
+.center {
+	text-align: center;
+}
+.main-nav{
+	margin-bottom: 0;
+	background-color: #E8E8E8;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.add-category-nav{
+	background-color: #E24648;
+	border-radius: 0;
+}
+.text-field{
+	height: 40px;
+	border:1px hidden;
+	border-bottom: 4px solid #fff;
+	outline: none;
+	font-size: 20px; 
+	background-color: #E24648;
+	float: left;
+	color: #fff;
+	font-family: "BrandonGrotesque-Regular";
+}
+.add-category-nav .input-group{
+	float: right;
+	padding: 10px 0;
+	padding-right: 40px;
+}
+.button {
+  float: left;
+  background-color: #fff;
+  /*height: 40px;*/
+  padding: 10px;
+  margin-left: 10px;
+  font-family: "BrandonGrotesque-Bold";
+  border:1px hidden;
+}
+.category-box{
+	margin: 20px 20px;
+	position: relative;
+	background-color: #fff;
+	box-shadow: 0 0 5px #000;
+}
+.header{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 18px;
+	padding: 20px 10px;
+	border-bottom: 2px solid;
+	font-family: "BrandonGrotesque-Black";
+	max-height: 65px;
+}
+.activity-input{
+	background-color: #fff; 
+	border-bottom: 4px solid black;
+	color : #000;
+}
+.add-activity {
+	background-color: #E24648;
+	color: #fff;
+}
+.activity-container .input-group{
+	margin:0 auto;
+	padding: 10px;
+}
+.close-button {
+	background-image: url(../images/close.png);
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	background-size: cover;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+.border-less{
+	border: 1px hidden;
+	outline: none;
+	text-align: center;
+}
+.done-image{
+	background-image: url(../images/done.png);
+	height: 30px;
+	width: 30px;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.activity-list-container {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+span.activity-list{
+	width: 100%;
+	float: left;
+	text-align: left;
+	font-size: 18px;
+	color: #E24648;
+	text-transform: capitalize;
+	padding: 5px 0;
+	padding-left: 18%;
+}
+span.activity-list:before{
+	content: "";
+	background-image: url(../images/dot.png);
+	width: 15px;
+	height: 15px;
+	background-size: cover;
+	float: left;
+	margin-right: 20px;
+	margin-top: 4px;
+}
+.close-activity{
+	background-image: url(../images/close_small.png);
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+	float: right;
+	margin-right: 30px;
+	cursor: pointer;
+}
