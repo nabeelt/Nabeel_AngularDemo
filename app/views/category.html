@@ -1,21 +1,29 @@
-<div class='col-md-4' ng-repeat="data in categoryJSON track by $index">
-	<div class='category-box'> 
+<div class='col-md-4'  ng-repeat="data in categoryJSON track by $index">
+	<div class='category-box animated slideInLeft'> 
 		<div class="close-button" ng-click="removeCategory($index)"></div> 
 		<div class='header'>
 			<p ng-hide="edit" ng-click="edit=!edit">{{data.category}}</p>
-			<div ng-show="edit">
+			<div ng-show="edit" class="edit-header">
 				<input ng-model="data.category" class="border-less" autofocus="on">
-  				<a href="#"  ng-click="edit=!edit">DONE</a>
+  				<div class="done-image" ng-click="edit=!edit"></div>
   			</div>
 		</div>
 		<div class='activity-container'>
 			<div class='input-group'>
-				<input placeholder='Add Activity' ng-model="activity" name='new-activity' class='text-field activity-input'>
-				<button class='button add-activity' ng-click="addNewActivity($index, activity)">ADD</button>
+				<form ng-submit="addNewActivity($index, activity)">
+					<input placeholder='Add Activity' ng-model="activity" name='new-activity' class='text-field activity-input'>
+					<button type="submit" class='button add-activity'>ADD</button>
+				</form>
 			</div>
-			<div class="activity-list-container">
-				<span class="activity-list" ng-repeat = "li in data.activities track by $index">{{li}}
-				<span class="close-activity" ng-click="removeActivity($index,$parent.$index)"></span>
+			<div class="activity-list-container" ui-sortable ="todoSortable" ng-model="data.activities">
+				<div ng-repeat ="li in data.activities track by $index" class="activity-list"> 
+					<span  ng-hide="editActivity" ng-click="editActivity=!editActivity">{{li}}</span>
+					<div ng-show="editActivity">
+						<input ng-model="li" class="border-less" autofocus="autofocus">
+  						<div class="done-image" ng-click="editActivity=!editActivity"></div>
+  					</div>
+  					<span class="close-activity" ng-click="removeActivity($index,$parent.$index)"></span>
+  				</div>
 				</li>
 			</div>
 		</div>

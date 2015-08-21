@@ -60,7 +60,8 @@ body{
 	font-family: 'BrandonGrotesque-Regular';
 	height: 100%;
 	width: 100%;
-	background-image: url(../images/background.jpg);
+	/*background-image: url(../images/background.jpg);*/
+	background-color:#78CFFF; 
 }
 p{
 	margin:0;
@@ -81,12 +82,14 @@ p{
 }
 .main-nav{
 	margin-bottom: 0;
-	background-color: #E8E8E8;
+	background-color: #FDBB50;
 	font-size: 14px;
 	text-transform: uppercase;
+	border:1px hidden;
+	border-radius: 0px;
 }
 .add-category-nav{
-	background-color: #E24648;
+	background-color: #FDBB50;
 	border-radius: 0;
 }
 .text-field{
@@ -95,7 +98,7 @@ p{
 	border-bottom: 4px solid #fff;
 	outline: none;
 	font-size: 20px; 
-	background-color: #E24648;
+	background-color: transparent;
 	float: left;
 	color: #fff;
 	font-family: "BrandonGrotesque-Regular";
@@ -107,18 +110,19 @@ p{
 }
 .button {
   float: left;
-  background-color: #fff;
+  background-color: #F26F70;
   /*height: 40px;*/
-  padding: 10px;
+  padding: 10px 15px;
   margin-left: 10px;
   font-family: "BrandonGrotesque-Bold";
   border:1px hidden;
+  color: #fff;
 }
 .category-box{
 	margin: 20px 20px;
 	position: relative;
 	background-color: #fff;
-	box-shadow: 0 0 5px #000;
+	cursor: crosshair;
 }
 .header{
 	text-align: center;
@@ -135,7 +139,7 @@ p{
 	color : #000;
 }
 .add-activity {
-	background-color: #E24648;
+	background-color: #F26F70;
 	color: #fff;
 }
 .activity-container .input-group{
@@ -156,6 +160,9 @@ p{
 	border: 1px hidden;
 	outline: none;
 	text-align: center;
+	text-transform: uppercase;
+	width: 80%;
+	float: left;
 }
 .done-image{
 	background-image: url(../images/done.png);
@@ -163,24 +170,28 @@ p{
 	width: 30px;
 	background-size: cover;
 	background-position: 50% 50%;
+	float: left;
+	margin-top: -3px;
+	cursor: pointer;
 }
 .activity-list-container {
 	width: 80%;
 	margin: 0 auto;
 	text-align: center;
 	overflow: hidden;
+	padding-bottom: 20px;
 }
-span.activity-list{
+.activity-list{
 	width: 100%;
 	float: left;
 	text-align: left;
 	font-size: 18px;
-	color: #E24648;
+	color: #000;
 	text-transform: capitalize;
-	padding: 5px 0;
-	padding-left: 18%;
+	padding: 10px 0;
+	border-bottom: 1px solid #000;
 }
-span.activity-list:before{
+.activity-list:before{
 	content: "";
 	background-image: url(../images/dot.png);
 	width: 15px;
@@ -196,6 +207,15 @@ span.activity-list:before{
 	width: 20px;
 	height: 20px;
 	float: right;
-	margin-right: 30px;
 	cursor: pointer;
+}
+.edit-header{
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.activity-list .border-less{
+	text-align: left;
+	text-transform: capitalize;
+	width: 68%;
 }
