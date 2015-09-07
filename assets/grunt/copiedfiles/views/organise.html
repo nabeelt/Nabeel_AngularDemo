@@ -1,0 +1,14 @@
+<div class="navbar add-category-nav">
+    <div class="input-group">
+        <form ng-submit = "addNewCategory()">
+        	<input id="add-category-input" placeholder="Add Category" ng-model="new_category" name="new-category" class="text-field">
+        	<button type="submit" class="button">ADD</button>
+        </form>
+    </div>
+ </div>
+
+<div class="category-container" >
+	<div class="row">
+		<category ui-sortable ="todoSortable" ng-model="categoryJSON"></category>
+	</div>
+</div>

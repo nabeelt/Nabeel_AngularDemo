@@ -1,0 +1,16 @@
+module.exports = function(grunt){
+	grunt.initConfig({
+		uglify:{
+			build:{
+				src:'app/controllers/addCategory.js',
+				dest:'app/controllers/addCategory.min.js'
+			}
+		}
+	})
+
+	// Load the plugin that provides the "uglify" task.
+  	grunt.loadNpmTasks('grunt-contrib-uglify');
+
+	// Default task(s).
+  	grunt.registerTask('default', ['uglify']);
+}
